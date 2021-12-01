@@ -23,7 +23,8 @@ export const route = Joi.object().keys({
   path: Joi.string().required(),
   handlers: Joi.object().required(),
   hostname: Joi.string().optional(),
-  headers: Joi.object().optional()
+  headers: Joi.object().optional(),
+  config: Joi.object().optional()
 });
 
 export const handler = Joi.object().keys({

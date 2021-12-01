@@ -54,6 +54,7 @@ function defineDynamicRoutes (drydock) {
       method: routeCfg.method,
       path: routeCfg.path,
       vhost: routeCfg.hostname,
+      config: routeCfg.config,
       handler: (req, reply) => {
         const drydockHandler = getSelectedHandler(drydock, routeCfg.name);
         const handlerCxt = getHandlerContext(drydock, req);
